@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(212, 45%, 89%);
+}
+
+
+.QR_Code {
+    display: block;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    box-shadow: 0px 25px 25px 0px rgba(0,0,0,0.0477);
+    width: 320px;
+    height: 473px;
+    margin: 152px 560px;
+}
+
+.qrcode_img {
+    width: 288px;
+    height: 288px;
+    margin: 16px 16px;
+    border-radius: inherit;
+}
+
+.ad_slogan {
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+    width: 288px;
+    height: 129px;
+    margin: 0px 16px 16px;
+}
+
+.slogan_goal{
+    font-weight: bold;
+    font-size: 22px;
+    color: #1F314F;
+    margin-top: 0px;
+}
+
+.slogan_action {
+    font-size: 15px;
+    color: #7D889E;
+    width: 256px;
+    height: 57px;
+    margin: 0px auto;
+}
+
+
+@media screen and (max-width: 376px) {
+    .QR_Code {
+        margin: 85px 28px;
+    }
+  }
+

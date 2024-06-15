@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #F4D04E;
+    --title-hover-text-color: var(--primary-color);
+    --description-text-color: #7F7F7F;
+    --preview-card-color: #FFFFFF;
+
+}
+
+html {
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    font-size: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.blog_preview_card {
+    background-color: var(--preview-card-color);
+    font-family: "Figtree", sans-serif;
+    line-height: 1.5;
+    border: 1px solid black;
+    border-radius: 24px;
+    box-shadow: 8px 8px 0px 0px black;
+    width: 384px;
+    height:522px;
+}
+
+.blog_preview_card:active {
+    box-shadow: 16px 16px 0px 0px black;
+}
+
+.display_img {
+    width: 336px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 24px 24px;
+}
+
+.content {
+    margin: 0px 24px 0px;
+}
+
+.category {
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 4px 12px;
+    background-color: var(--primary-color);
+    
+}
+
+.publish_date {
+    display: inherit;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.blog_title{
+    display: inherit;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: 12px;
+}
+
+.blog_title:active {
+    color: var(--primary-color);
+}
+
+.description{
+    font-size: 16px;
+    color: var(--description-text-color);
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin: 24px 24px 24px;
+}
+.author_profile{
+    width: 32px;
+    height: 32px;
+}
+.author_name{
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+@media screen and (max-width: 376px) {
+    .blog_preview_card {
+        width: 327px;
+        height:501px;
+    }
+
+    .display_img {
+        width: 279px;
+    }
+
+    .category, .publish_date{
+        font-size: 12px;
+    }
+
+    .blog_title{
+        font-size: 20px;
+    }
+
+    .description, .author_name{
+        font-size: 14px;
+    }
+}

@@ -103,12 +103,12 @@ html {
 
 @media screen and (max-width: 376px) {
     .blog_preview_card {
-        width: 327px;
+        width: 90%;
         height:501px;
     }
 
     .display_img {
-        width: 279px;
+        width: 84%;
     }
 
     .category, .publish_date{
